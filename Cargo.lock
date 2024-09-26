@@ -226,15 +226,7 @@ name = "anchor-groth-solana-demo"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",
- "ark-bn254",
- "ark-serialize",
  "groth16-solana",
- "num-bigint 0.4.6",
- "serde",
- "serde_json",
- "solana-rpc-client",
- "solana-sdk",
- "uint",
 ]
 
 [[package]]
@@ -862,6 +854,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "cli"
+version = "0.1.0"
+dependencies = [
+ "anchor-groth-solana-demo",
+ "anchor-lang",
+ "ark-bn254",
+ "ark-serialize",
+ "dotenv",
+ "groth16-solana",
+ "num-bigint 0.4.6",
+ "serde",
+ "serde_json",
+ "solana-rpc-client",
+ "solana-sdk",
+ "uint",
+]
+
+[[package]]
 name = "combine"
 version = "3.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1102,6 +1112,12 @@ dependencies = [
  "crypto-common",
  "subtle",
 ]
+
+[[package]]
+name = "dotenv"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77c90badedccf4105eca100756a0b1289e191f6fcbdadd3cee1d2f614f97da8f"
 
 [[package]]
 name = "eager"

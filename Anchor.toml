@@ -8,10 +8,10 @@ skip-lint = false
 anchor_groth_solana_demo = "3dg1wKkhN4WexPV1z9Q9hJnSoqB5j3pCboBGm36UC129"
 
 [registry]
-url = "https://api.apr.dev"
+url = "https://api.devnet.solana.com"
 
 [provider]
-cluster = "Localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

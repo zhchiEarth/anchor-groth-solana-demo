@@ -1,8 +1,9 @@
 [workspace]
-members = [
-    "programs/*"
-]
+members = ["cli", "programs/*"]
 resolver = "2"
+
+[workspace.dependencies]
+anchor-groth-solana-demo = { path = "programs/anchor-groth-solana-demo" }
 
 [profile.release]
 overflow-checks = true
