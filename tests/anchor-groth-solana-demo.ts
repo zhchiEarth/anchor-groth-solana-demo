@@ -10,18 +10,6 @@ describe("anchor-groth16-demo", () => {
   const provider = anchor.AnchorProvider.env()
   const program = anchor.workspace.AnchorGrothSolanaDemo as Program<AnchorGrothSolanaDemo>;
 
-  it("test initialized!", async () => {
-    const computeBudgetInstruction = anchor.web3.ComputeBudgetProgram.setComputeUnitLimit({
-      units: 1500000,
-    });
-
-    const initializeInstruction = await program.methods.initialize().instruction();
-    const transaction = new anchor.web3.Transaction().add(computeBudgetInstruction).add(initializeInstruction);
-
-    const signature = await provider.sendAndConfirm(transaction);
-    console.log("signature:", signature);
-  });
-
   // it("test verify!", async () => {
   //   const uint8Array = getProof();
   //   type RustArrayEquivalent = number[][];
